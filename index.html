@@ -14,27 +14,29 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#" id="logo">
-            <i class="fas fa-laptop-code" id='icon'></i>#Cvv
+    <nav id='nav'>
+        <a href="#" class="nav__logo">
+            <i class="fas fa-laptop-code" id='nav__logo-icon'></i>#Cvv
         </a>
-        <ul id=menu>
+        <ul class=nav__menu>
             <li><a href="#about"> About</a></li>
             <li><a href="#skills"> Skills</a></li>
             <li><a href="#portfolio"> Portfolio</a></li>
-            <li>Contact</li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <i class="fas fa-bars"></i>
     </nav>
-    <header>
-        <div id='bgImage'></div>
-        <article>
+    <header class='header'>
+        <div class='header__container'>
+        <article class='header__article'>
             <h1> Front-End Web <br> Developer</h1>
             <p>Cezary Wrzalik</p>
         </article>
+        </div>
     </header>
-    <aside>
-        <div id=side>
-            <ul id="socials">
+    <aside class='aside'>
+        <div class='aside__container'>
+            <ul class="aside__container__socialslist">
                 <li>
                     <a href="https://github.com/Kilof1" target="_blank" class="fa fa-github"></a>
                 </li>
@@ -48,13 +50,13 @@
         </div>
     </aside>
     <main>
-        <section id='about'>
+        <section class='about'>
             <h2>Hej jestem Czarek. Miło mi cię poznać</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non corporis maxime quae adipisci molestiae omnis dolorem veniam eum velit numquam eveniet, dignissimos illo asperiores sed iure? Inventore qui ipsum eaque?</p>
+            <p class='about__info'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non corporis maxime quae adipisci molestiae omnis dolorem veniam eum velit numquam eveniet, dignissimos illo asperiores sed iure? Inventore qui ipsum eaque?</p>
         </section>
-        <section id="skills">
-            <div id="flex_container">
-                <div class="item">
+        <section class="skills">
+            <div class="skills__flex-container">
+                <div class="skill">
                     <i class="fab fa-sketch"></i>
                     <h3>Design</h3>
                     <p>Paint</p>
@@ -67,7 +69,7 @@
                         
 
                 </div>
-                <div class="item">
+                <div class="skill">
                     <i class="fas fa-desktop"></i>
                     <h3>Front-End</h3>
                     <p>Html, Css, Js</p>
@@ -78,7 +80,7 @@
                         <li>Tutaj też coś powinno być</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="skill">
                     <i class="fas fa-server"></i>
                     <h3>Back-End</h3>
                     <p>Node.js, PHP</p>
@@ -87,39 +89,39 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio">
+        <section class="portfolio">
             <h2>Porfolio</h2>
-            <div id="grid_container">
+            <div class="portfolio__grid-container">
                 <div class='pic' id='e1'>
-                    <div class="more">
+                    <div class="pic__more">
                         <h3>Projekt 1</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, earum est quaerat quidem aspernatur aliquid? Similique, voluptate architecto quo porro cumque ipsum, ullam doloremque qui cum necessitatibus delectus nihil repellat.</p>
                         <a href="#">View</a>
                     </div>
                 </div>
                 <div class='pic' id='e2'>
-                    <div class="more">
+                    <div class="pic__more">
                         <h3>Projekt 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium voluptatum adipisci reprehenderit, quam officia suscipit sed repellat nesciunt nostrum cupiditate commodi obcaecati! Expedita cumque at reiciendis pariatur molestiae? Asperiores.</p>
                         <a href="#">View</a>
                     </div>
                 </div>
                 <div class='pic' id='e3'>
-                    <div class="more">
+                    <div class="pic__more">
                         <h3>Projekt 3</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos aliquam dolore placeat iusto consectetur, sequi excepturi explicabo autem fugiat quas at adipisci perferendis esse a vero fugit illo quasi.</p>
                         <a href="#">View</a>
                     </div>
                 </div>
                 <div class='pic' id='e4'>
-                    <div class="more">
+                    <div class="pic__more">
                         <h3>Projekt 4</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos aliquam dolore placeat iusto consectetur, sequi excepturi explicabo autem fugiat quas at adipisci perferendis esse a vero fugit illo quasi.</p>
                         <a href="#">View</a>
                     </div>
                 </div>
                 <div class='pic' id='e5'>
-                    <div class="more">
+                    <div class="pic__more">
                         <h3>Projekt 5</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos aliquam dolore placeat iusto consectetur, sequi excepturi explicabo autem fugiat quas at adipisci perferendis esse a vero fugit illo quasi.</p>
                         <a href="#">View</a>
@@ -127,11 +129,11 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section class="contact">
             <h2>Contact</h2>
-            <div id='form_container'>
-                <div id='my_contact'>
-                    <p>Opisz swój problem i wyślij mi go. Postaram się go rozwiąząc najszybciej jak to możliwe.</p>
+            <div class='contact__container'>
+                <div class='contact__container-info'>
+                    <p class='describe'>Opisz swój problem i wyślij mi go. Postaram się go rozwiąząc najszybciej jak to możliwe.</p>
                     <article>
                         <p><b>Cezary Wrzalik</b></p>
                         <p><b>Poland, Wrocław</b></p>
@@ -140,8 +142,8 @@
                         <p>Cwrzalik@gmail.com</p>
                     </article>
                 </div>
-                <div id='form'>
-                    <form action="none" class='form'>
+                <div class='contact__container__form'>
+                    <form action="none" class='contact__container__form'>
                         <input type="text" placeholder="Imię">
                         <input type="text" placeholder="Nazwisko">
                         <input type="text" placeholder="Email">
