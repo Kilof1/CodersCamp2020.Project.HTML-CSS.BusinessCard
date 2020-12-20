@@ -6,6 +6,7 @@
     --description: 'Spartan', sans-serif;
     --title: 'Raleway', sans-serif;
     --titleFontSize: 30px;
+    --descriptionFontSize: 20px;
     list-style-type: none;
 
 }
@@ -62,12 +63,13 @@ nav {
     display: inline-block;
     float: right;
     font-family: var(--description);
+    /* font-size: var(--descriptionFontSize); */
     font-weight: 600;
 }
 
 .nav__menu li {
     display: inline;
-    margin: 15px;
+    margin: 0 15px;
     white-space: nowrap;
     cursor: pointer;
 }
@@ -89,9 +91,6 @@ nav {
 /* HEADER STYLES */
 .header {
     width: 100%;
-}
-
-.header__container {
     position: relative;
     height: 100vh;
     background: url(./assets/images/background.jpg) center/cover no-repeat;
@@ -104,7 +103,7 @@ nav {
     left: 50%;
     font-family: var(--title);
     color: white;
-    font-size: 20px;
+    font-size: var(--descriptionFontSize);
     text-align: center;
 }
 
@@ -171,12 +170,12 @@ nav {
 /* SECTION ABOUT STYLES */
 
 .about {
-    font-family: var(--description);
-    background-color: var(--main-color);
-    min-height: 400px;
-    text-align: center;
     padding-top: 50px;
-    font-size: 20px;
+    padding-bottom: 170px;
+    font-family: var(--description);
+    font-size: var(--descriptionFontSize);
+    background-color: var(--main-color);
+    text-align: center;
 }
 
 .about__info {
@@ -193,8 +192,8 @@ nav {
     position: relative;
     top: -150px;
     width: 90%;
-    background-color: #fff;
     margin: auto;
+    background-color: #fff;
     border-radius: 50px;
 }
 
@@ -211,8 +210,8 @@ nav {
     padding: 20px 20px;
 
     text-align: center;
-    font-size: 20px;
-    font-family: var(--title);
+    font-family: var(--description);
+    font-size: var(--descriptionFontSize);
 }
 
 .skills__flex-container__skill:nth-child(1),
@@ -227,8 +226,8 @@ nav {
 
 .skills__flex-container__skill h3 {
     margin-top: 10px;
-    font-family: var(--description);
-    font-size: 30px;
+    font-family: var(--title);
+    font-size: var(--titleFontSize);
 }
 
 .skills__flex-container__skill p {
@@ -241,19 +240,19 @@ nav {
 
 .portfolio {
     text-align: center;
-    font-family: var(--description);
-    font-size: 30px;
 }
 
 .portfolio h2 {
-    margin: 20px;
+    font-family: var(--title);
+    font-size: var(--titleFontSize);
+    margin: -20px 0 20px 0;
 }
 
 .portfolio__grid-container {
     display: grid;
-    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
+    width: 100%;
 }
 
 .portfolio__grid-container__project--1 {
@@ -285,13 +284,13 @@ nav {
 .portfolio__grid-container__project__more {
     opacity: 0;
     visibility: hidden;
+    padding: 20px;
     opacity: 0;
+    max-height: 100%;
     transition: visibility 0s, opacity 0.5s linear;
     text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
     text-align: left;
-    font-size: 18px;
-    padding: 20px;
-    max-height: 100%;
+    font-size: var(--descriptionFontSize)ą;
 }
 
 .portfolio__grid-container__project__more h3 {
@@ -301,15 +300,15 @@ nav {
 
 .portfolio__grid-container__project__more a {
     margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
     float: right;
     text-align: center;
     font-family: var(--title);
     text-decoration: none;
-    line-height: 40px;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 1%, rgba(0, 212, 255, 1) 100%);
-    width: 80px;
-    height: 40px;
     color: white;
     border: 1px solid black;
     border-radius: 50px;
@@ -329,8 +328,8 @@ nav {
     top: 20px;
     left: 50%;
     transform: translate(-50%);
+    font-family: var(--title);
     font-size: var(--titleFontSize);
-    font-family: var(--description);
 }
 
 .contact__container {
@@ -343,11 +342,11 @@ nav {
 
 .contact__container-info {
     flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-color);
     border-right: 3px dotted black;
-    display: flex;
     text-align: center;
-    flex-direction: column;
 }
 
 .contact__container-info__addres {
@@ -381,6 +380,10 @@ nav {
     width: 65%;
     height: 40px;
     box-shadow: 0px 3px 8px 0px black;
+}
+
+.contact__container__form button {
+    padding-left: 0px;
 }
 
 .contact__container__form textarea {
@@ -444,7 +447,7 @@ footer {
 @media only screen and (max-width: 800px) {
     .fa-bars {
         display: inline-block;
-        margin-right: 40px;
+        margin-right: 20px;
         line-height: 80px;
         font-size: 30px;
         cursor: pointer;
@@ -456,10 +459,6 @@ footer {
 
     .side {
         display: none;
-    }
-
-    .about {
-        min-height: 500px;
     }
 
     .about__info {
