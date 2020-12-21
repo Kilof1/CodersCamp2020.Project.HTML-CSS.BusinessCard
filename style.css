@@ -282,15 +282,15 @@ nav {
 }
 
 .portfolio__grid-container__project__more {
-    opacity: 0;
+    position: relative;
     visibility: hidden;
     padding: 20px;
     opacity: 0;
-    max-height: 100%;
-    transition: visibility 0s, opacity 0.5s linear;
+    height: 100%;
     text-shadow: 4px 4px 8px rgba(150, 150, 150, 1);
     text-align: left;
-    font-size: var(--descriptionFontSize)ą;
+    font-size: var(--descriptionFontSize);
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .portfolio__grid-container__project__more h3 {
@@ -299,19 +299,15 @@ nav {
 }
 
 .portfolio__grid-container__project__more a {
-    margin-top: 20px;
-    width: 80px;
-    height: 40px;
-    line-height: 40px;
-    float: right;
+    position: absolute;
+    width: 100px;
+    right: 30px;
+    bottom: 30px;
     text-align: center;
-    font-family: var(--title);
-    text-decoration: none;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 1%, rgba(0, 212, 255, 1) 100%);
-    color: white;
-    border: 1px solid black;
-    border-radius: 50px;
+}
+i.btn{
+    background-color: var(--main-color);
+    border-radius: 40px;
 }
 
 .portfolio__grid-container__project:hover>.portfolio__grid-container__project__more {
@@ -447,7 +443,6 @@ footer {
 @media only screen and (max-width: 800px) {
     .fa-bars {
         display: inline-block;
-        margin-right: 20px;
         line-height: 80px;
         font-size: 30px;
         cursor: pointer;
