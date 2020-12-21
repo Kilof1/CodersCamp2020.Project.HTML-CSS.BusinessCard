@@ -2,17 +2,181 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9c1baa749.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,500&family=Spartan:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicons/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Cezary Wrzalik</title>
+    <style>
 
+    </style>
 </head>
 
 <body>
+    <nav id='nav'>
+        <div class='nav-container'>
+            <a href="#" class="nav__logo">
+                <i class="fas fa-laptop-code" id='nav__logo-icon'></i>#Cvv
+            </a>
+            <ul class=nav__menu>
+                <li><a href="#about"> O mnie</a></li>
+                <li><a href="#skills"> Umiejętności</a></li>
+                <li><a href="#portfolio"> Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <header class='header'>
+        <article class='header__article'>
+            <h1> Front-End Web <br> Developer</h1>
+            <p>Cezary Wrzalik</p>
+        </article>
+    </header>
+    <aside class='aside'>
+        <ul class="aside__socialslist">
+            <li>
+                <a href="https://github.com/Kilof1" target="_blank" class="fa fa-github"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/cezary.wrzalik" target="_blank" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-twitter"></a>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <section class='about' id='about'>
+            <h2>Hej jestem Czarek. Miło mi Cię poznać</h2>
+            <p class='about__info'>Mam 21 lat. Od 3 lat studiuje informatkę na WSB we Wrocławiu. Interesuje się Astronomią, lotnictewem i w wolnym czasie gram na gitarze. Nabyte przezmnie umiejętności oraz ich zastosowanie możesz zobaczyć poniżej:  </p>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skills__flex-container">
+                <div class="skills__flex-container__skill">
+                    <i class="fab fa-sketch"></i>
+                    <h3>Design</h3>
+                    <p>Paint</p>
+                    <p><b>Więcej:</b></p>
+                    <ul>
+                        <li>Zaawansowane oprawy graficzne stron</li>
+                        <li>Tworzenie animacji</li>
+                        <li>Potrafię narysować twojego ulubionego pokemona</li>
+                    </ul>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-<p>TEST commit</p>
+
+                </div>
+                <div class="skills__flex-container__skill">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Front-End</h3>
+                    <p>Html, Css, Js</p>
+                    <p><b>Więcej:</b></p>
+                    <ul>
+                        <li>Pisanie zaawanowanych stron internetowych nie takich jak ta</li>
+                        <li>Tworzenie gier i apliakcji w przeglądarce</li>
+                        <li>Tutaj też coś powinno być</li>
+                    </ul>
+                </div>
+                <div class="skills__flex-container__skill">
+                    <i class="fas fa-server"></i>
+                    <h3>Back-End</h3>
+                    <p>Node.js, PHP</p>
+                    <p><b>Więcej: </b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel dignissimos ex, eveniet reiciendis
+                        commodi totam excepturi voluptatibus soluta aspernatur magnam? Natus quidem tempora numquam
+                        asperiores, labore officia cumque veritatis doloremque.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id='portfolio'>
+            <h2>Portfolio</h2>
+            <div class="portfolio__grid-container">
+                <div class='portfolio__grid-container__project portfolio__grid-container__project--1' id='e1'>
+                    <div class="portfolio__grid-container__project__more">
+                        <h3>Projekt 1</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, earum est quaerat quidem
+                            aspernatur aliquid? Similique, voluptate architecto quo porro cumque ipsum, ullam doloremque
+                            qui cum necessitatibus delectus nihil repellat.</p>
+                        <a href="#"><i class="fa fa-github btn" ></i></a>
+                    </div>
+                </div>
+                <div class='portfolio__grid-container__project portfolio__grid-container__project--2' id='e2'>
+                    <div class="portfolio__grid-container__project__more">
+                        <h3>Projekt 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laudantium voluptatum adipisci
+                            reprehenderit, quam officia suscipit sed repellat nesciunt nostrum cupiditate commodi
+                            obcaecati! Expedita cumque at reiciendis pariatur molestiae? Asperiores.</p>
+                        <a href="#"><i class="fa fa-github btn" ></i></a>
+                    </div>
+                </div>
+                <div class='portfolio__grid-container__project portfolio__grid-container__project--3' id='e3'>
+                    <div class="portfolio__grid-container__project__more">
+                        <h3>Projekt 3</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos aliquam dolore
+                            placeat iusto consectetur, sequi excepturi explicabo autem fugiat quas at adipisci
+                            perferendis esse a vero fugit illo quasi.</p>
+                        <a href="#"><i class="fa fa-github btn" ></i></a>
+                    </div>
+                </div>
+                <div class='portfolio__grid-container__project portfolio__grid-container__project--4' id='e4'>
+                    <div class="portfolio__grid-container__project__more">
+                        <h3>Projekt 4</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos aliquam dolore
+                            placeat iusto consectetur, sequi excepturi explicabo autem fugiat quas at adipisci
+                            perferendis esse a vero fugit illo quasi.</p>
+                        <a href="#"><i class="fa fa-github btn" ></i></a>
+                    </div>
+                </div>
+                <div class='portfolio__grid-container__project portfolio__grid-container__project--5' id='e5'>
+                    <div class="portfolio__grid-container__project__more">
+                        <h3>Projekt 5</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos aliquam dolore
+                            placeat iusto consectetur, sequi excepturi explicabo autem fugiat quas at adipisci
+                            perferendis esse a vero fugit illo quasi.</p>
+                        <a href="#"><i class="fa fa-github btn" ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id='contact'>
+            <h2>Kontakt</h2>
+            <div class='contact__container'>
+                <div class='contact__container-info'>
+                    <p class='contact__container-info__describe'>Opisz swój problem i wyślij mi go. Postaram się go
+                        rozwiąząc najszybciej jak to
+                        możliwe.</p>
+                    <article class='contact__container-info__addres'>
+                        <p><b>Cezary Wrzalik</b></p>
+                        <p><b>Poland, Wrocław</b></p>
+                        <p>ul. Grabiszyńska 12 55-080</p>
+                        <p>+48 501 058 162</p>
+                        <p>Cwrzalik@gmail.com</p>
+                    </article>
+                </div>
+                <div class='contact__container__form'>
+                    <form action="none" class='contact__container__form'>
+                        <input type="text" placeholder="Imię">
+                        <input type="text" placeholder="Nazwisko">
+                        <input type="text" placeholder="Email">
+                        <textarea name="" id="" placeholder="Treść"></textarea>
+                        <button>Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Cezary Wrzalik © 2020-2022</p>
+    </footer>
 </body>
+
 </html>
