@@ -25,6 +25,7 @@ nav {
     background-color: white;
     border-bottom: 2px solid black;
     line-height: 80px;
+    animation: 2s nav-show;
 }
 
 .nav-container {
@@ -111,6 +112,7 @@ nav {
 .header__article p,
 .header__article h1 {
     text-shadow: 0px 0px 8px rgb(8, 8, 8);
+    animation: 2s header-show;
 }
 
 /* END OF STYLES FOR WELCOME */
@@ -124,6 +126,7 @@ nav {
     z-index: 10;
     bottom: 0px;
     right: 0px;
+    animation: 2s aside-show;
 }
 
 .aside__socialslist {
@@ -518,3 +521,32 @@ footer {
     }
 
 }
+@keyframes nav-show {
+    from {
+      top: -100px;  
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      top: 0px;
+    }
+  }
+
+  @keyframes aside-show {
+    from {
+      opacity: 0;
+      right: -100px;
+    }
+    to {
+      opacity: 1;
+      right: 0px;
+    }
+  }
+  @keyframes header-show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
