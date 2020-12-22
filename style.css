@@ -123,7 +123,7 @@ nav {
 /* ASIDE STYLES */
 .aside {
     position: fixed;
-    z-index: 10;
+    z-index: 9;
     bottom: 0px;
     right: 0px;
     animation: 2s aside-show;
@@ -199,8 +199,8 @@ nav {
 .skills__flex-container {
     display: flex;
     height: 100%;
-    box-shadow: 0px 6px 15px 0px var(--main-color);
     border-radius: 50px;
+    box-shadow: 0px 6px 15px 0px var(--main-color);
 }
 
 .skills__flex-container__skill {
@@ -236,6 +236,10 @@ nav {
 .skills__flex-container__skill ul li {
     margin: 10px;
 }
+
+/* END OF STYLES FOR SECTION SKILLS */
+
+/* STYLES FOR SECTION PORTFOLIO */
 
 .portfolio {
     text-align: center;
@@ -292,6 +296,11 @@ nav {
     transition: visibility 0s, opacity 0.5s linear;
 }
 
+.portfolio__grid-container__project:hover>.portfolio__grid-container__project__more {
+    visibility: visible;
+    opacity: 1;
+}
+
 .portfolio__grid-container__project__more h3 {
     font-family: var(--title);
     margin-bottom: 10px;
@@ -309,10 +318,9 @@ i.btn{
     border-radius: 40px;
 }
 
-.portfolio__grid-container__project:hover>.portfolio__grid-container__project__more {
-    visibility: visible;
-    opacity: 1;
-}
+/* END OF STYLES FOR SECTION PORTFOLIO */
+
+/* STYLES FOR SECTION CONTACT */
 
 .contact {
     position: relative;
@@ -397,6 +405,9 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+
+/* END OF STYLES FOR SECTION CONTACT */
+
 
 footer {
     height: 50px;
