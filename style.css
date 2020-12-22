@@ -127,12 +127,13 @@ nav {
     bottom: 0px;
     right: 0px;
     animation: 2s aside-show;
+    width: 70px;
 }
 
 .aside__socialslist {
-    width: 70px;
+    width: 100%;
     background-color: #fff;
-    border-top-left-radius: 50px;
+    border-top-left-radius: 40px;
     list-style-type: none;
 }
 
@@ -159,7 +160,7 @@ nav {
 
 .fa-github {
     background: grey;
-    border-top-left-radius: 50px;
+    border-top-left-radius: 40px;
 }
 
 /* END OF ASIDE STYLES */
@@ -462,8 +463,8 @@ footer {
         display: none;
     }
 
-    .side {
-        display: none;
+    .aside {
+        width: 50px;
     }
 
     .about__info {
